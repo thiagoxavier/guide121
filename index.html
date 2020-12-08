@@ -8,6 +8,25 @@
 <h1>Guide 121</h1>
 <p>Exemplo widget</p>
 
+<style>
+    /* http://waitanimate.wstone.io/#!/ */
+.shake {
+  animation: shake-animation 4.72s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes shake-animation {
+   0% { transform:translate(0,0) }
+  4% { transform:translate(10px,0) }
+  3.57143% { transform:translate(0,0) }
+  5.35714% { transform:translate(5px,0) }
+  7.14286% { transform:translate(0,0) }
+  8.92857% { transform:translate(5px,0) }
+  10.71429% { transform:translate(0,0) }
+  100% { transform:translate(0,0) }
+}
+</style>
+
 <script>
     var url = 'index.js';
     var s = document.createElement('script');
@@ -34,7 +53,7 @@
       "ctaText":"Iniciar conversa",
       "borderRadius":"25",
       "autoShow":false,
-      "phoneNumber":"1144165000"
+      "phoneNumber":"+551144165000"
   }
 };
     s.onload = function() {
